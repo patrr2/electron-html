@@ -1,0 +1,19 @@
+{
+  "name": "electron-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "electron/main.js",
+  "scripts": {
+    "tsc-watch": "tsc --watch",
+    "start-electron": "electron .",
+    "start": "concurrently \"npm run tsc-watch\" \"npm run start-electron\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron/remote": "^2.0.11",
+    "concurrently": "^8.2.1",
+    "electron": "^26.2.2",
+    "typescript": "^5.2.2"
+  }
+}
